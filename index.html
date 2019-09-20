@@ -126,21 +126,33 @@
 						</a>
 					</h1>
 
-					<!-- MENUBAR TRIGGER -->
-					<button class="menubar-trigger js-menubar-trigger" title="Mostrar ou esconder o menu">
+					<!-- NAVBAR TRIGGER -->
+					<button class="navbar-trigger js-navbar-trigger" title="Mostrar ou esconder o menu">
 						<i class="fas fa-bars" aria-hidden="true"></i>
 					</button>
 
-					<!-- MENUBAR -->
-					<ul class="menubar">
-						<li class="menubar-item">
-							<a href="/">Início</a>
-						</li>
+					<!-- NAVBAR -->
+					<nav class="navbar" itemtype="https://schema.org/SiteNavigationElement">
 
-						<li class="menubar-item">
-							<a href="#cards">Cards</a>
-						</li>
-					</ul>
+						<!-- TITLE NAVIGATION -->
+						<h2 class="sr-only">Navegue</h2>
+
+						<!-- MENU -->
+						<ul class="menubar" role="menubar">
+							<li class="menubar-item">
+								<a href="/" itemprop="url">
+									<span itemprop="name">Início</span>
+								</a>
+							</li>
+
+							<li class="menubar-item">
+								<a href="#cards" itemprop="url">
+									<span itemprop="name">Cards</span>
+								</a>
+							</li>
+						</ul>
+
+					</nav>
 
 				</div>
 			</div>
@@ -151,44 +163,42 @@
 		<!-- 			   MAIN  				 -->
 		<!-- =================================== -->
 
-		<main class="main">
+		<main class="main pt-default">
 
 			<!-- LAST NEWS -->
-			<section>
+			<section class="pt-default">
 				<div class="container">
 
 					<!-- TITLE -->
 					<h2 class="mb-default" id="cards">Cards</h2>
 
 					<!-- CONTENT -->
-					<div class="row">
-						<div class="card-line mb-default">
-							<a class="card-line-anchor" href="#">
-								<figure class="card-line-image">
-									<img src="https://via.placeholder.com/400" alt="Card Line" title="Card Line" />
-								</figure>
+					<div class="card-line mb-default">
+						<a class="card-line-anchor" href="#">
+							<figure class="card-line-image">
+								<img src="https://via.placeholder.com/450" alt="Card Line" title="Card Line" />
+							</figure>
 
-								<div class="card-line-content">
-									<h3 class="card-line-title">Card Line</h3>
+							<div class="card-line-content">
+								<h3 class="card-line-title">Card Line</h3>
 
-									<div class="card-line-excerpt">Exemplo de card horizontal, com imagem a esquerda.</div>
+								<div class="card-line-excerpt">Exemplo de card horizontal, com imagem a esquerda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, beatae provident tenetur minus facere unde accusantium inventore aperiam repellat obcaecati nesciunt vero commodi modi, consectetur odio aliquam veniam harum distinctio.</div>
 
-									<div class="card-line-meta">
-										<div class="row justify-content-between">
-											<div class="col-auto">
-												<span class="card-line-author">Victor Matias</span>
-												em
-												<span class="card-line-category">Destaque</span>
-											</div>
+								<div class="card-line-meta">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<span class="card-line-author">Victor Matias</span>
+											em
+											<span class="card-line-category">Destaque</span>
+										</div>
 
-											<div class="col-auto">
-												<span class="card-line-date">dd/mm/aaaa</span>
-											</div>
+										<div class="col-auto">
+											<span class="card-line-date">dd/mm/aaaa</span>
 										</div>
 									</div>
 								</div>
-							</a>
-						</div>
+							</div>
+						</a>
 					</div>
 
 					<!-- CONTENT -->
